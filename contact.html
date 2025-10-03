@@ -1,29 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contact - MUFC EMC</title>
-    <link rel="stylesheet" href="static/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - MUFC Expectation Management Coaching</title>
+  <link rel="stylesheet" href="static/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Contact Us</h1>
-    </header>
-
-    <nav>
-        <a href="./">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./contact.html">Contact</a>
-    </nav>
-
-    <div class="container">
-        <h2>Get in Touch</h2>
-        <p>Email: support@mufc-emc.com</p>
-        <p>Phone: 0161-EXPECT-LESS</p>
-        <p>Follow us for daily coping tips on social media.</p>
+  <!-- Hero -->
+  <header class="hero">
+    <div class="overlay">
+      <h1>Contact Us</h1>
+      <p>We’re here to listen (because United’s board doesn’t)</p>
     </div>
+  </header>
 
-    <footer>
-        <p>© 2025 MUFC Coaching. All rights reserved.</p>
-    </footer>
+  <!-- Navigation -->
+  <nav>
+    <a href="./">Home</a>
+    <a href="./about.html">About</a>
+    <a href="./contact.html">Contact</a>
+  </nav>
+
+  <!-- Content -->
+  <section class="container">
+    <h2>Get In Touch</h2>
+    <p>Whether you’re fuming after a derby defeat or cautiously optimistic about a new signing, 
+    we’ve got your back. Reach out and let’s manage those expectations together.</p>
+
+    <form class="contact-form">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 MUFC Coaching. All rights reserved.</p>
+    <p>Follow us: 
+      <a href="#">Twitter</a> | 
+      <a href="#">Instagram</a> | 
+      <a href="https://www.youtube.com/@MNSMisfits/videos">YouTube</a>
+    </p>
+  </footer>
 </body>
 </html>
+

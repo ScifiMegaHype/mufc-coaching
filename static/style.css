@@ -1,58 +1,147 @@
-/* MUFC Expectation Management CSS */
-
+/* Global */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #111; /* dark background */
-    color: #f5f5f5;
-    line-height: 1.6;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #111;
+  color: #eee;
+  line-height: 1.6;
 }
 
-header {
-    background: #da291c; /* MUFC Red */
-    color: white;
-    padding: 20px;
-    text-align: center;
+/* Hero Section */
+.hero {
+  background: url('images/old-trafford.jpg') no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2em;
-    letter-spacing: 1px;
+.hero .overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+  color: #fff;
 }
 
+/* Navigation */
 nav {
-    background: #000;
-    padding: 10px;
-    text-align: center;
+  background: #da291c;
+  padding: 15px;
+  text-align: center;
 }
 
 nav a {
-    color: #f5f5f5;
-    font-size: 25px;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 nav a:hover {
-    color: #da291c;
+  text-decoration: underline;
 }
 
+/* Container */
 .container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background: #222;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+  padding: 40px 20px;
+  text-align: center;
 }
 
+/* Services */
+.services {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 280px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Expectation Meter */
+.meter {
+  margin: 30px auto;
+  width: 80%;
+}
+
+.bar {
+  background: #444;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.fill {
+  background: #da291c;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Footer */
 footer {
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
-    background: #000;
-    color: #888;
+  background: #000;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #da291c;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background: #222;
+  color: #eee;
+}
+
+.contact-form button {
+  background: #da291c;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #b71c1c;
 }
